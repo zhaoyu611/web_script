@@ -46,7 +46,7 @@ def extract_picture(folder_path=os.getcwd(), picked_pic_folder='picked_pic'):
                     newname = str(beauty_count)+'__' + picked_pic
                     shutil.copy(picked_pic, os.path.join(
                         folder_path, picked_pic_folder, newname))
-                    rename_list.append(newname)
+                    rename_list.append(newname) 
 
                 sum_pic_list.append(rename_list)       
                 pic_info_list.append(parent.split('/')[-1]+'['+str(pic_num)+'P'+str(pic_num*4)+'M]')
